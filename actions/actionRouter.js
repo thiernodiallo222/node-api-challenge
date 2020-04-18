@@ -33,8 +33,8 @@ router.post('/', (req, res) => {
     if (!req.body) {
         res.status(400).json({ message: "Missing action body" });
     } else {
-        if (!req.body.name || !req.body.description) {
-            res.status(400).json({message:"name or description is missing !"})
+        if (!req.body.project_id || !req.body.description || !req.body.notes) {
+            res.status(400).json({message:"Either the project id or the description or the note is missing !"})
         } else {
             db.insert(req.body)
                 .then(post => {
