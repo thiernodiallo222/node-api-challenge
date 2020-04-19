@@ -1,0 +1,40 @@
+ /* ListChild  component  styling */
+
+ .list-child{
+width: 100vw;
+height: 100vh;
+display: flex;
+background: white;
+flex-direction: column;
+color:black;
+ }
+  .welcome-sentence{
+      height: 8vh;
+     font-family: monospace;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .projects-actions{
+width: 100vw;
+height: 92vh;
+display: flex;
+background: white;
+color: black;
+justify-content: space-evenly;
+;
+ }
+ .projects-list, .actions-list{
+     width: 49vw;
+     height:91vh;
+     display: flex;
+     justify-content: center;
+     border: 1px, solid, red;
+     box-sizing: border-box;
+     background: whitesmoke;
+     border-radius: 8px;
+     
+
+ }
+
