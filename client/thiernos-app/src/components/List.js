@@ -4,28 +4,37 @@ import axios from 'axios';
 
 export class List extends Component {
 
-      constructor(props) {
+  constructor(props) {
     super(props);
-          this.state = {
-        message:"welcome to my app"
+    this.state = {
+      message: "welcome to my app",
+      data:[]
     };
-      }
+  }
     
-    componentDidMount() {
-    axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
+  componentDidMount() {
+    axios.get(`http://localhost:5000/projects`)
       .then(res => {
-        const posts = res.data.data.children.map(obj => obj.data);
-        this.setState({ posts });
+        console.log(res);
+        this.setState({
+          ...this.state,
+          data: res.data,
+        })
       });
   }
     
-    render() {
-        return (
-            <div>
-                <ListChild message={this.state.message}/>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        {this.state.data.map((project, index) => {
+         return <ListChild id={index}
+            project = { project }/>})}
+      </div>
+    )
+  }
 }
 
 export default List
+  // message={this.state.message}
+
+            
