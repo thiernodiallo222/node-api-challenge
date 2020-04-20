@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="whole page">
       <div className="welcome-sentence">
-        <h4>Projects</h4>
+        <h5>Projects</h5>
         <h3>Welcome to my App</h3>
-        <h4>Actions</h4>
+        <h5>Actions</h5>
       </div>
       <Lists className ="app"/>
     </div>
