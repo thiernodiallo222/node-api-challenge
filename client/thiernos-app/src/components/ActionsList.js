@@ -26,7 +26,7 @@ export class ActionsList extends Component {
         {this.state.projects.map(action => {
           return <ActionsChild
             id={action.id}
-            project_Id={action.project_id}
+            project_id={action.project_id}
               description={action.description}
               notes={action.notes}
           />
