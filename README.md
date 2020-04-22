@@ -39,14 +39,19 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+  In this week I have learned a lot about express, namely setting up routes and middlewares.
 
 - [ ] Describe Middleware?
+         A middleware  function  is a function that has access to the request, response objects  and next function in the application request cycle. The next function allows us to proceed to the execution of the next middleware.
 
 - [ ] Describe a Resource?
+        A ressource, is a location in the database, where we can find data, by making an api request through a given end point. 
 
 - [ ] What can the API return to help clients know if a request was successful?
+        An API should always return a status code, to let clients know about the status of the request. For example, it sends the satus code 200(OK),  for for suceeded requests.
 
 - [ ] How can we partition our application into sub-applications?
+        To partition an application into sub-applications, we need to create a folder for each sub-application and include them all into one giant folder. 
 
 ## Minimum Viable Product
 
